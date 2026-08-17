@@ -1,0 +1,116 @@
+.services-section {
+  padding: var(--spacing-5xl) 0;
+  background-color: var(--color-white);
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: var(--spacing-4xl);
+}
+
+.services-title {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-dark);
+  margin-bottom: var(--spacing-md);
+}
+
+.services-subtitle {
+  font-size: var(--font-size-lg);
+  color: var(--color-medium-gray);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-2xl);
+}
+
+.service-category {
+  background-color: var(--color-off-white);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-xl);
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-lg);
+  padding-bottom: var(--spacing-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.category-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  border-radius: var(--radius-md);
+}
+
+.category-title {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  color: var(--color-dark);
+}
+
+.service-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.service-item {
+  padding: var(--spacing-md) 0;
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.service-item:last-child {
+  border-bottom: none;
+}
+
+.service-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xs);
+}
+
+.service-name {
+  font-size: var(--font-size-base);
+  font-weight: 500;
+  color: var(--color-dark);
+}
+
+.service-description {
+  font-size: var(--font-size-sm);
+  color: var(--color-medium-gray);
+  line-height: 1.5;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .services-section {
+    padding: var(--spacing-3xl) 0;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .service-category {
+    padding: var(--spacing-lg);
+  }
+
+  .services-title {
+    font-size: var(--font-size-2xl);
+  }
+}
